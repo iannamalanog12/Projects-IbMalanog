@@ -4,18 +4,27 @@ Program: palindromes.py
 
 Description: This program asks the user for a word and determines
 if the word is a palindrome (a word spelled the same forwards and
-backwards).
+backwards). It will then ask the user if they want to type another 
+word
 """
 
-word = input("Enter a word: ")
-its_a_palendrome = True 
+goAgain = "yes".lower()
 
-for i in range(int(len(word) / 2)):
-    if word[i] != word[len(word) - 1 - i]:
-        its_a_palendrome = False 
-        break
+while goAgain == "yes": 
+    word = input("Enter a word: ")
+    its_a_palindrome = True 
     
-if its_a_palendrome:
-    print("Yes, " + word + " is a palendrome!")
-else:
-    print("Sorry, " + word + " is not a palendrome.")
+    for i in range(int(len(word) / 2)):
+        if word[i] != word[len(word) - 1 - i]:
+            its_a_palindrome = False 
+            break
+        
+    if its_a_palindrome:
+        print("Yes, '" + word + "' is a palindrome!")
+    else:
+        print("Sorry, '" + word + "' is not a palindrome.")
+    
+    print(" ")
+    goAgain = input("Would you like to enter another word? (yes or no) ").lower()
+    
+print("Have a good day!!")
