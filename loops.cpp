@@ -61,8 +61,6 @@ void printAnswer(int i) {
     cout << endl;           
 }
 
-
-
 int main() {
     int n, i, method;
     float underRadical;
@@ -71,7 +69,6 @@ int main() {
     method = askForLoopMethod();
     
     printHeader();
-    
     
     i = 1;
     switch(method) {
@@ -95,7 +92,6 @@ int main() {
             cout << method << " was not one of the choices.";
             break;
         }
-    
     return 0;
 }
 
