@@ -6,7 +6,7 @@ using namespace std;
 Name: Ib Malanog
 Program: lowMidHigh.cpp
 
-Description: This function will prompt the user to enter 3 different
+Description: This program will prompt the user to enter 3 different
 numbers and identify which is the maximum, minimum, and middle number using 
 a nested if statement.
 -----------------------------------------------------------------------------
@@ -72,7 +72,7 @@ int main() {
                 middle = c;
                 min = b;
             }
-        } else {                //if the line 53 if statement is not true, its combo 6
+        } else {                //if this is true it's combo 6
             max = a;
             middle = b;
             min = c;
